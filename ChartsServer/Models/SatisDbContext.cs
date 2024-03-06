@@ -21,7 +21,7 @@ public partial class SatisDbContext : DbContext
     public virtual DbSet<Satislar> Satislars { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlServer("Server=.;Database=SatisDB;Trusted_Connection=True;TrustServerCertificate=true;");
+        => optionsBuilder.UseSqlServer("Your-Database-Address");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
